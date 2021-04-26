@@ -1,0 +1,24 @@
+package Testing;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Fruit objFruit = new Fruit("Fruit");
+        Apple objApple = new Apple("Apple",2,5,30);
+        Banana objBanana = new Banana("Banana",1,7,15);
+        Blueberries objBlueberries = new Blueberries("Blueberries",10,5,35);
+        System.out.println("\nThe total price for apple is RM"+objApple.calTotalPrice());
+        System.out.println("The total weight for banana is "+objBanana.calTotalWeight()+"gm.");
+        System.out.println("The total price for blueberries is RM"+objBlueberries.calTotalPrice());
+        System.out.println("The total weight for blueberries is "+objBlueberries.calTotalWeight()+"gm.");
+    }
+    
+}
