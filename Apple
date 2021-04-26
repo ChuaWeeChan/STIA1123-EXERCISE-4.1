@@ -1,0 +1,22 @@
+package Testing;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Apple extends Fruit{
+    private int price,quantity,weight;
+    
+    public Apple(String name, int p, int q, int w){
+        super(name);
+        this.price = p;//if the variable declare private, so need to put "this.".
+        this.quantity = q;
+        this.weight = w;
+        
+    }
+    
+    public int calTotalPrice(){
+        return (this.price*this.quantity);
+    }
+    
+}
